@@ -1,0 +1,120 @@
+UNIVERSIDAD CATOLICA DE EL SALVADOR FACULTAD DE INGENIERIA Y ARQUITECTURA: INGENIERÍA EN DESARROLLO DE SOFTWARE– PROGRAMACIÓN ESTRUCTURADA
+PRÁCTICA #2 PERIODO 1 A2
+
+Problemática: Sistema Básico de Administración para una Clínica Médica
+Contexto
+La Clínica Médica UNICAES atiende diariamente a pacientes que requieren consultas médicas en diferentes especialidades. Actualmente, gran parte de la información administrativa se registra de forma manual, lo que dificulta el control de pacientes, médicos, consultorios y horarios de atención.
+Como parte de un proceso de mejora, la clínica desea desarrollar un sistema de consola que permita administrar la información básica de sus operaciones diarias. Debido a que este corresponde a un primer proyecto académico, el sistema únicamente simulará el funcionamiento durante la ejecución del programa, sin almacenar información de manera permanente.
+
+Objetivo
+Desarrollar una aplicación de consola en C# que permita administrar información básica relacionada con:
+	Pacientes 
+	Médicos 
+	Consultorios 
+	Citas médicas 
+	Especialidades 
+El sistema deberá organizar la información mediante menús y submenús, utilizando únicamente estructuras básicas de programación.
+
+
+
+
+
+Requerimientos
+Menú Principal
+El sistema deberá presentar un menú similar al siguiente:
+=========================================
+ CLÍNICA MÉDICA UNICAES
+ Sistema Administrativo
+=========================================
+
+1. Administración de Pacientes
+2. Administración de Médicos
+3. Administración de Consultorios
+4. Administración de Citas
+5. Administración de Especialidades
+6. Salir
+
+Seleccione una opción:
+Cada opción deberá conducir a su respectivo submenú.
+Módulo de Pacientes
+Permitir las siguientes operaciones:
+1. Registrar paciente
+2. Consultar paciente
+3. Mostrar información registrada
+4. Regresar
+Información solicitada:
+	Número de expediente 
+	Nombre completo 
+	Edad 
+	Sexo 
+	Tipo de sangre 
+	Número de teléfono 
+
+
+
+
+
+
+
+
+Módulo de Médicos
+Permitir:
+1. Registrar médico
+2. Consultar médico
+3. Mostrar información registrada
+4. Regresar
+Información:
+	Código del médico 
+	Nombre completo 
+	Especialidad 
+	Años de experiencia 
+	Horario de atención 
+
+Módulo de Consultorios
+Permitir registrar la información de un consultorio.
+Datos:
+	Número de consultorio 
+	Piso 
+	Capacidad de pacientes en espera 
+	Cantidad de pacientes esperando 
+	Consultorio disponible (Sí/No) 
+El sistema deberá calcular:
+	Espacios disponibles en la sala de espera. 
+Si la cantidad de pacientes supera la capacidad, deberá mostrar un mensaje de advertencia.
+
+
+
+
+
+
+
+Módulo de Citas
+Permitir registrar una cita médica.
+Datos:
+	Número de cita 
+	Nombre del paciente 
+	Nombre del médico 
+	Fecha 
+	Hora 
+	Tipo de consulta (General o Especializada) 
+El sistema deberá indicar si la cita fue registrada correctamente y mostrar toda la información ingresada.
+Módulo de Especialidades
+Registrar:
+	Nombre de la especialidad 
+	Cantidad de médicos asignados 
+	Cantidad de consultorios disponibles 
+	Responsable del área 
+Posteriormente deberá mostrar toda la información registrada.
+Restricciones Técnicas
+Los estudiantes únicamente podrán utilizar:
+	Variables 
+	Constantes 
+	Funciones (métodos) 
+	Estructuras de control anidadas 
+	Operaciones aritméticas y lógicas
+Criterios de evaluación
+Criterio	Porcentaje
+Conocimiento del código	60%
+Código limpio y lógico	20%
+Validaciones de datos	10%
+Organización y legibilidad del código	10%

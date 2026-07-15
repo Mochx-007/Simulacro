@@ -1,0 +1,14 @@
+/home/mochix/Descargas/Simulacro/Administracion_Clinica/bin/Debug/net10.0/Administracion_Clinica
+/home/mochix/Descargas/Simulacro/Administracion_Clinica/bin/Debug/net10.0/Administracion_Clinica.deps.json
+/home/mochix/Descargas/Simulacro/Administracion_Clinica/bin/Debug/net10.0/Administracion_Clinica.runtimeconfig.json
+/home/mochix/Descargas/Simulacro/Administracion_Clinica/bin/Debug/net10.0/Administracion_Clinica.dll
+/home/mochix/Descargas/Simulacro/Administracion_Clinica/bin/Debug/net10.0/Administracion_Clinica.pdb
+/home/mochix/Descargas/Simulacro/Administracion_Clinica/obj/Debug/net10.0/Administracion_Clinica.GeneratedMSBuildEditorConfig.editorconfig
+/home/mochix/Descargas/Simulacro/Administracion_Clinica/obj/Debug/net10.0/Administracion_Clinica.AssemblyInfoInputs.cache
+/home/mochix/Descargas/Simulacro/Administracion_Clinica/obj/Debug/net10.0/Administracion_Clinica.AssemblyInfo.cs
+/home/mochix/Descargas/Simulacro/Administracion_Clinica/obj/Debug/net10.0/Administracion_Clinica.csproj.CoreCompileInputs.cache
+/home/mochix/Descargas/Simulacro/Administracion_Clinica/obj/Debug/net10.0/Administracion_Clinica.dll
+/home/mochix/Descargas/Simulacro/Administracion_Clinica/obj/Debug/net10.0/refint/Administracion_Clinica.dll
+/home/mochix/Descargas/Simulacro/Administracion_Clinica/obj/Debug/net10.0/Administracion_Clinica.pdb
+/home/mochix/Descargas/Simulacro/Administracion_Clinica/obj/Debug/net10.0/Administracion_Clinica.genruntimeconfig.cache
+/home/mochix/Descargas/Simulacro/Administracion_Clinica/obj/Debug/net10.0/ref/Administracion_Clinica.dll

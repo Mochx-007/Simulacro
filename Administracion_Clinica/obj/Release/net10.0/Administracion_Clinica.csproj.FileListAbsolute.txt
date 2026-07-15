@@ -1,0 +1,4 @@
+/workspaces/Simulacro/Administracion_Clinica/obj/Release/net10.0/Administracion_Clinica.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Simulacro/Administracion_Clinica/obj/Release/net10.0/Administracion_Clinica.AssemblyInfoInputs.cache
+/workspaces/Simulacro/Administracion_Clinica/obj/Release/net10.0/Administracion_Clinica.AssemblyInfo.cs
+/workspaces/Simulacro/Administracion_Clinica/obj/Release/net10.0/Administracion_Clinica.csproj.CoreCompileInputs.cache

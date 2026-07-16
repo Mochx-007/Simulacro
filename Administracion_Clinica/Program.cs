@@ -4,7 +4,8 @@ class program
 
         list <Medico> medicos = new list<Medico>();
 
-        list <Consultorio> consultorios = new list<Consultorio>();
+        list <Consultorio> consultorios = new list<Consultorio>();}
+
 
     static void Main(string[] args)
     {
@@ -52,6 +53,7 @@ class program
                 default:
                     Console.WriteLine("Opción no válida. Intente de nuevo.");
                     break;
+
             }
         } while (opcion != "6");
     }
@@ -254,6 +256,7 @@ class program
         Consultorio1.Cantidad_Pacientes_Atendidos = int.Parse(Console.ReadLine());
         Console.WriteLine("Consultorio disponible (Si/No)");
         Consultorio1.Disponibilidad = Console.ReadLine();
+
 
     }
 

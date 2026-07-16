@@ -23,7 +23,7 @@ namespace Administracion_Clinica
             string tipo = Console.ReadLine();
 
             Console.Clear();
-            Console.WriteLine("--- Cita Registrada Correctamente ---");
+            Console.WriteLine(" Cita Registrada Correctamente");
             Console.WriteLine($"Número de cita: {numero}");
             Console.WriteLine($"Paciente: {paciente}");
             Console.WriteLine($"Médico: {medico}");

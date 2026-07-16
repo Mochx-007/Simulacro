@@ -21,7 +21,7 @@ namespace Administracion_Clinica
             string disponible = Console.ReadLine();
 
             Console.Clear();
-            Console.WriteLine("--- Información del Consultorio ---");
+            Console.WriteLine("Información del Consultorio");
             Console.WriteLine($"Consultorio: {numero} (Piso {piso})");
             Console.WriteLine($"Estado: {(disponible.ToLower() == "si" ? "Disponible" : "No Disponible")}");
             
@@ -29,14 +29,14 @@ namespace Administracion_Clinica
             
             if (esperando > capacidad)
             {
-                Console.WriteLine("¡ADVERTENCIA! La cantidad de pacientes supera la capacidad de la sala de espera.");
+                Console.WriteLine(" La cantidad de pacientes supera la capacidad de la sala de espera.");
             }
             else
             {
                 Console.WriteLine($"Espacios disponibles en sala de espera: {espaciosDisponibles}");
             }
             
-            Console.WriteLine("\nPresione una tecla para regresar al menú principal...");
+            Console.WriteLine("Presione una tecla para regresar al menú principal...");
             Console.ReadKey();
         }
     }

@@ -19,13 +19,13 @@ namespace Administracion_Clinica
             string responsable = Console.ReadLine();
 
             Console.Clear();
-            Console.WriteLine("--- Información de Especialidad Registrada ---");
+            Console.WriteLine("Información de Especialidad Registrada");
             Console.WriteLine($"Especialidad: {nombre}");
             Console.WriteLine($"Médicos Asignados: {medicos}");
             Console.WriteLine($"Consultorios Disponibles: {consultorios}");
             Console.WriteLine($"Responsable: {responsable}");
             
-            Console.WriteLine("\nPresione una tecla para regresar al menú principal...");
+            Console.WriteLine("Presione una tecla para regresar al menú principal...");
             Console.ReadKey();
         }
     }

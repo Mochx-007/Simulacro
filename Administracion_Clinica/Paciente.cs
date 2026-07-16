@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Administracion_Clinica
 {
@@ -17,7 +18,7 @@ namespace Administracion_Clinica
             do
             {
                 Console.Clear();
-                Console.WriteLine("--- Módulo de Pacientes ---");
+                Console.WriteLine(" Módulo de Pacientes ");
                 Console.WriteLine("1. Registrar paciente");
                 Console.WriteLine("2. Consultar paciente");
                 Console.WriteLine("3. Mostrar información registrada");
@@ -58,7 +59,7 @@ namespace Administracion_Clinica
         static void Consultar()
         {
             Console.Clear();
-            Console.Write("Ingrese el número de expediente a consultar: ");
+            Console.Write("Ingrese el número de expediente: ");
             string exp = Console.ReadLine();
             if (exp == expediente && expediente != "")
             {
@@ -66,7 +67,7 @@ namespace Administracion_Clinica
             }
             else
             {
-                Console.WriteLine("\nPaciente no encontrado. Presione una tecla...");
+                Console.WriteLine("Paciente no encontrado. ");
                 Console.ReadKey();
             }
         }
@@ -74,7 +75,7 @@ namespace Administracion_Clinica
         static void Mostrar()
         {
             Console.Clear();
-            Console.WriteLine("--- Información del Paciente ---");
+            Console.WriteLine(" Información del Paciente ");
             if (expediente == "")
             {
                 Console.WriteLine("No hay información registrada.");
@@ -88,7 +89,7 @@ namespace Administracion_Clinica
                 Console.WriteLine($"Tipo de sangre: {tipoSangre}");
                 Console.WriteLine($"Teléfono: {telefono}");
             }
-            Console.WriteLine("\nPresione una tecla para continuar...");
+            Console.WriteLine("Presione una tecla para continuar...");
             Console.ReadKey();
         }
     }

@@ -7,7 +7,7 @@ namespace Administracion_Clinica
         public static void MenuCitas()
         {
             Console.Clear();
-            Console.WriteLine("--- Módulo de Citas Médicas ---");
+            Console.WriteLine(" Módulo de Citas Médicas ");
             
             Console.Write("Número de cita: ");
             string numero = Console.ReadLine();
@@ -30,7 +30,7 @@ namespace Administracion_Clinica
             Console.WriteLine($"Fecha: {fecha} | Hora: {hora}");
             Console.WriteLine($"Tipo: {tipo}");
             
-            Console.WriteLine("\nPresione una tecla para regresar al menú principal...");
+            Console.WriteLine("Presione una tecla para regresar al menú principal...");
             Console.ReadKey();
         }
     }

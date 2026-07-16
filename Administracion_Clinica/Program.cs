@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+
 
 namespace Administracion_Clinica
 {
@@ -46,7 +48,7 @@ namespace Administracion_Clinica
                          Console.WriteLine("Saliendo del sistema..."); 
                          break;
                         default: 
-                            Console.WriteLine("Opción no válida. Presione cualquier tecla para continuar."); 
+                            Console.WriteLine("Opción no válida. "); 
                             Console.ReadKey(); 
                             break;
                     }

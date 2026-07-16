@@ -16,7 +16,7 @@ namespace Administracion_Clinica
             do
             {
                 Console.Clear();
-                Console.WriteLine("--- Módulo de Médicos ---");
+                Console.WriteLine(" Módulo de Médicos ");
                 Console.WriteLine("1. Registrar médico");
                 Console.WriteLine("2. Consultar médico");
                 Console.WriteLine("3. Mostrar información registrada");
@@ -63,7 +63,7 @@ namespace Administracion_Clinica
             }
             else
             {
-                Console.WriteLine("\nMédico no encontrado. Presione una tecla...");
+                Console.WriteLine("Médico no encontrado. Presione una tecla...");
                 Console.ReadKey();
             }
         }
@@ -71,7 +71,7 @@ namespace Administracion_Clinica
         static void Mostrar()
         {
             Console.Clear();
-            Console.WriteLine("--- Información del Médico ---");
+            Console.WriteLine(" Información del Médico ");
             if (codigo == "")
             {
                 Console.WriteLine("No hay información registrada.");
@@ -84,7 +84,7 @@ namespace Administracion_Clinica
                 Console.WriteLine($"Años de experiencia: {experiencia}");
                 Console.WriteLine($"Horario: {horario}");
             }
-            Console.WriteLine("\nPresione una tecla para continuar...");
+            Console.WriteLine("Presione una tecla para continuar...");
             Console.ReadKey();
         }
     }

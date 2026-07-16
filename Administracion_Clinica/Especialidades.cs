@@ -1,9 +1,32 @@
+using System;
 
-class Especialidades
+namespace Administracion_Clinica
 {
-    public string Nombre_Especialidad { get; set; }
-    public int Cantidad_Medicos_Asignados { get; set; }
-    public int Cantidad_Consultorios_Disponibles { get; set; }
-    public string Responsable_Area { get; set; }
+    public class Especialidades
+    {
+        public static void MenuEspecialidades()
+        {
+            Console.Clear();
+            Console.WriteLine("--- Módulo de Especialidades ---");
+            
+            Console.Write("Nombre de la especialidad: ");
+            string nombre = Console.ReadLine();
+            Console.Write("Cantidad de médicos asignados: ");
+            int medicos = int.Parse(Console.ReadLine());
+            Console.Write("Cantidad de consultorios disponibles: ");
+            int consultorios = int.Parse(Console.ReadLine());
+            Console.Write("Responsable del área: ");
+            string responsable = Console.ReadLine();
 
+            Console.Clear();
+            Console.WriteLine("--- Información de Especialidad Registrada ---");
+            Console.WriteLine($"Especialidad: {nombre}");
+            Console.WriteLine($"Médicos Asignados: {medicos}");
+            Console.WriteLine($"Consultorios Disponibles: {consultorios}");
+            Console.WriteLine($"Responsable: {responsable}");
+            
+            Console.WriteLine("\nPresione una tecla para regresar al menú principal...");
+            Console.ReadKey();
+        }
+    }
 }

@@ -2,39 +2,33 @@ using System;
 
 namespace Administracion_Clinica
 {
-    public class Consultorios
+    public class Citas_Medicas
     {
-        public static void MenuConsultorios()
+        public static void MenuCitas()
         {
             Console.Clear();
-            Console.WriteLine("--- Módulo de Consultorios ---");
+            Console.WriteLine("--- Módulo de Citas Médicas ---");
             
-            Console.Write("Número de consultorio: ");
+            Console.Write("Número de cita: ");
             string numero = Console.ReadLine();
-            Console.Write("Piso: ");
-            string piso = Console.ReadLine();
-            Console.Write("Capacidad de pacientes en espera: ");
-            int capacidad = int.Parse(Console.ReadLine());
-            Console.Write("Cantidad de pacientes esperando: ");
-            int esperando = int.Parse(Console.ReadLine());
-            Console.Write("Consultorio disponible (Sí/No): ");
-            string disponible = Console.ReadLine();
+            Console.Write("Nombre del paciente: ");
+            string paciente = Console.ReadLine();
+            Console.Write("Nombre del médico: ");
+            string medico = Console.ReadLine();
+            Console.Write("Fecha (DD/MM/AAAA): ");
+            string fecha = Console.ReadLine();
+            Console.Write("Hora: ");
+            string hora = Console.ReadLine();
+            Console.Write("Tipo de consulta (General o Especializada): ");
+            string tipo = Console.ReadLine();
 
             Console.Clear();
-            Console.WriteLine("--- Información del Consultorio ---");
-            Console.WriteLine($"Consultorio: {numero} (Piso {piso})");
-            Console.WriteLine($"Estado: {(disponible.ToLower() == "si" ? "Disponible" : "No Disponible")}");
-            
-            int espaciosDisponibles = capacidad - esperando;
-            
-            if (esperando > capacidad)
-            {
-                Console.WriteLine("¡ADVERTENCIA! La cantidad de pacientes supera la capacidad de la sala de espera.");
-            }
-            else
-            {
-                Console.WriteLine($"Espacios disponibles en sala de espera: {espaciosDisponibles}");
-            }
+            Console.WriteLine("--- Cita Registrada Correctamente ---");
+            Console.WriteLine($"Número de cita: {numero}");
+            Console.WriteLine($"Paciente: {paciente}");
+            Console.WriteLine($"Médico: {medico}");
+            Console.WriteLine($"Fecha: {fecha} | Hora: {hora}");
+            Console.WriteLine($"Tipo: {tipo}");
             
             Console.WriteLine("\nPresione una tecla para regresar al menú principal...");
             Console.ReadKey();

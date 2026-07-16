@@ -29,10 +29,10 @@ namespace Administracion_Clinica
                         case 1: 
                         Paciente.MenuPacientes(); 
                         break;
-                        case 2: 
-                        Medico.MenuMedicos();
-                         break;
-                        case 3: 
+                        case 2:
+                        Medico.MenuMedicos(); 
+                        break;
+                        case 3:
                         Consultorios.MenuConsultorios(); 
                         break;
                         case 4:

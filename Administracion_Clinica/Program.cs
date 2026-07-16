@@ -1,7 +1,10 @@
-﻿class program
+class program
 {
-        static paciente paciente1 = new paciente();
-    static Medico medico1 = new Medico();
+        list <Paciente> pacientes = new list<Paciente>();
+
+        list <Medico> medicos = new list<Medico>();
+
+        list <Consultorio> consultorios = new list<Consultorio>();
 
     static void Main(string[] args)
     {
@@ -110,7 +113,7 @@
 
     static void ConsultarPaciente()
     {
-        Console.WriteLine("\n--- Consultar Paciente ---");
+        Console.WriteLine(" Consultar Paciente ");
         Console.Write("Escriba el número de expediente del paciente a consultar: ");
         int numeroExpediente = int.Parse(Console.ReadLine());
         if (numeroExpediente == paciente1.Numero_Expediente && paciente1.Numero_Expediente != 0)
@@ -175,7 +178,6 @@
 
     static void RegistrarMedico()
     {
-        Console.WriteLine("\n--- Registrar Médico ---");
         Console.Write("Escriba el código del médico: ");
         medico1.Codigo_Medico = int.Parse(Console.ReadLine());
         Console.Write("Escriba el nombre completo del médico: ");
@@ -217,9 +219,43 @@
 
     static void AdministracionConsultorios()
     {
-        Console.WriteLine("1. Registrar Consultorio");
-        Console.WriteLine("2. Consultar Consultorio");
-        Console.WriteLine("3. Mostrar información registrada");
-        Console.WriteLine("4. Regresar");
+        string opcion;
+        do
+        {
+            Console.WriteLine("1. Registrar Consultorio");
+            Console.WriteLine("2. Mostrar información registrada");
+            Console.WriteLine("3. Regresar");
+
+            switch (opcion)
+            {
+                case "1":
+                    RegistrarConsultorio();
+                    break;
+                case "2":
+                    MostrarInformacionConsultorioRegistrada();
+                    break;
+                case "3":
+                    // No hace nada, simplemente saldrá del bucle y regresará al menú principal.
+                    break;
+                default:
+                    Console.WriteLine("Opción no válida.");
+                    break;
+            }
+        } while (opcion != "3");
+
+        RegistrarConsultorio();
+        Console.WriteLine("Escriba el número del consultorio ");
+        Consultorio1.Numero_Consultorio = int.Parse(Console.ReadLine());
+        Console.WriteLine("Escriba el numero de piso del consultorio ");
+        Consultorio1.Numero_Piso = int.Parse(Console.ReadLine());
+        Console.WriteLine("Escriba la cantidad de pacientes en espera");
+        Consultorio1.Cantidad_Pacientes_En_Espera = int.Parse(Console.ReadLine());
+        Console.WriteLine("Escriba la cantidad de pacientes esperando");
+        Consultorio1.Cantidad_Pacientes_Atendidos = int.Parse(Console.ReadLine());
+        Console.WriteLine("Consultorio disponible (Si/No)");
+        Consultorio1.Disponibilidad = Console.ReadLine();
+
     }
+
+
 }

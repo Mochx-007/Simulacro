@@ -6,7 +6,7 @@ namespace Administracion_Clinica
     {
         static void Main(string[] args)
         {
-            int opcion = 0;
+            string opcion = "0";
             do
             {
                 Console.Clear();
@@ -22,26 +22,27 @@ namespace Administracion_Clinica
                 Console.WriteLine("6. Salir");
                 Console.Write("Seleccione una opción: ");
                 
-                if (int.TryParse(Console.ReadLine(), out opcion))
+                opcion = Console.ReadLine();
+                if (opcion != null)
                 {
                     switch (opcion)
                     {
-                        case 1: 
+                        case "1": 
                         Paciente.MenuPacientes(); 
                         break;
-                        case 2:
+                        case "2":
                         Medico.MenuMedicos(); 
                         break;
-                        case 3:
+                        case "3":
                         Consultorios.MenuConsultorios(); 
                         break;
-                        case 4:
+                        case "4":
                          Citas_Medicas.MenuCitas(); 
                          break;
-                        case 5: 
+                        case "5": 
                         Especialidades.MenuEspecialidades();
                          break;
-                        case 6:
+                        case "6":
                          Console.WriteLine("Saliendo del sistema..."); 
                          break;
                         default: 
@@ -50,7 +51,7 @@ namespace Administracion_Clinica
                             break;
                     }
                 }
-            } while (opcion != 6);
+            } while (opcion != "6");
         }
     }
 }

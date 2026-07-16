@@ -12,7 +12,7 @@ namespace Administracion_Clinica
 
         public static void MenuMedicos()
         {
-            int opcion;
+            string opcion;
             do
             {
                 Console.Clear();
@@ -22,17 +22,17 @@ namespace Administracion_Clinica
                 Console.WriteLine("3. Mostrar información registrada");
                 Console.WriteLine("4. Regresar");
                 Console.Write("Seleccione una opción: ");
-                opcion = int.Parse(Console.ReadLine());
+                opcion = Console.ReadLine();
 
                 switch (opcion)
                 {
-                    case 1: Registrar(); break;
-                    case 2: Consultar(); break;
-                    case 3: Mostrar(); break;
-                    case 4: break;
+                    case "1": Registrar(); break;
+                    case "2": Consultar(); break;
+                    case "3": Mostrar(); break;
+                    case "4": break;
                     default: Console.WriteLine("Opción inválida."); Console.ReadKey(); break;
                 }
-            } while (opcion != 4);
+            } while (opcion != "4");
         }
 
         static void Registrar()
